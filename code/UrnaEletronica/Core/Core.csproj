@@ -42,11 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Candidato.cs" />
+    <Compile Include="Entities\Partido.cs" />
+    <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
+    <Compile Include="Interfaces\IRepositorioPartidos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
