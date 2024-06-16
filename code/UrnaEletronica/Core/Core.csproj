@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Candidato.cs" />
+    <Compile Include="Entities\Cargo.cs" />
     <Compile Include="Entities\Partido.cs" />
     <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
+    <Compile Include="Interfaces\IRepositorioCargos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
