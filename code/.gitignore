@@ -1,0 +1,76 @@
+# .gitignore for C# projects
+
+# Ignore build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio Code files
+.vscode/
+.vs/
+
+# Ignore any other IDE specific files
+.idea/
+
+# Ignore directories for packages
+packages/
+.vscode/
+
+# Ignore the NuGet packages folder in the root of the repository
+## Uncomment if you have a packages folder at the root, but typically you should be restoring packages in your CI build.
+# /packages
+
+# Ignore the folder-based project model workspace mapping file
+.vscode/
+
+# Ignore JetBrains Rider specific files
+.idea/
+
+# Ignore Visual Studio working directory
+.vscode/
+.ionide/
+
+# Ignore auto-generated AssemblyInfo.cs files
+Generated_Code/
+
+# Ignore the build output directories
+bin/
+obj/
+
+# Ignore the compiled binary logs
+*.log
+
+# Ignore the log file directory
+logs/
+
+# Ignore the stylecop analysis cache
+StyleCop.Cache
+
+# Ignore coverage analysis tool files
+*.coverage
+*.coveragexml
+*.cov
+*.cov.json
+
+# Ignore Test Explorer personal test results files
+TestResults/
+
+# Ignore WebAssembly build output
+wwwroot/
+
+# Ignore Windows Forms designer generated files
+*.Designer.cs
+
+# Ignore database and backup files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore publish output
+.publish/
