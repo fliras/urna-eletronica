@@ -47,6 +47,7 @@
     <Compile Include="Entities\ChapaEleitoral.cs" />
     <Compile Include="Entities\Eleicao.cs" />
     <Compile Include="Entities\Partido.cs" />
+    <Compile Include="Entities\Voto.cs" />
     <Compile Include="Exceptions\CandidatosInsuficientesException.cs" />
     <Compile Include="Exceptions\ChapasInsuficientesException.cs" />
     <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Interfaces\IRepositorioCargos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
     <Compile Include="Interfaces\IRepositorioEleicao.cs" />
+    <Compile Include="Interfaces\IRepositorioVotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
