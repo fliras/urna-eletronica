@@ -7,19 +7,19 @@ namespace Application.Usecases
 {
     public class CadastroEleicao : ICadastroEleicao
     {
-        private readonly IRepositorioEleicao repoEleicao;
+        private readonly IRepositorioEleicao _repoEleicao;
 
         public CadastroEleicao(IRepositorioEleicao repositorioEleicao)
         {
-            repoEleicao = repositorioEleicao;
+            _repoEleicao = repositorioEleicao;
         }
 
         public int Handle(CadastroEleicaoDto cadastroEleicao)
         {
             Eleicao novaEleicao = new Eleicao() { Nome = cadastroEleicao.Nome };
-            int idNovaEleicao = repoEleicao.Criar(novaEleicao);
+            int idNovaEleicao = _repoEleicao.Criar(novaEleicao);
             foreach (CargoConcorrido cargo in cadastroEleicao.CargosConcorridos)
-                repoEleicao.OfertarCargo(idNovaEleicao, cargo);
+                _repoEleicao.OfertarCargo(idNovaEleicao, cargo);
             return idNovaEleicao;
         }
     }

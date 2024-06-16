@@ -7,11 +7,11 @@ namespace Application.Usecases
 {
     internal class CadastroCandidato : ICadastroCandidato
     {
-        private readonly IRepositorioCandidatos repoCandidatos;
+        private readonly IRepositorioCandidatos _repoCandidatos;
 
         public CadastroCandidato(IRepositorioCandidatos repositorioCandidatos)
         {
-            repoCandidatos = repositorioCandidatos;
+            _repoCandidatos = repositorioCandidatos;
         }
 
         public int Handle(CadastroCandidatoDto cadastroCandidato)
@@ -21,7 +21,7 @@ namespace Application.Usecases
                 Nome = cadastroCandidato.Nome, 
                 UriFoto = cadastroCandidato.UriFoto 
             };
-            return repoCandidatos.Criar(novoCandidato);
+            return _repoCandidatos.Criar(novoCandidato);
         }
     }
 }

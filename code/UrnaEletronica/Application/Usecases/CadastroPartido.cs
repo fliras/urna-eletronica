@@ -8,16 +8,16 @@ namespace Application.Usecases
 {
     internal class CadastroPartido : ICadastroPartido
     {
-        private readonly IRepositorioPartidos repoPartidos;
+        private readonly IRepositorioPartidos _repoPartidos;
 
         public CadastroPartido(IRepositorioPartidos repositorioPartidos)
         {
-            repoPartidos = repositorioPartidos;
+            _repoPartidos = repositorioPartidos;
         }
 
         public int Handle(CadastroPartidoDto cadastroPartido)
         {
-            Partido partidoExistente = repoPartidos.ObterPeloDigito(cadastroPartido.Digito);
+            Partido partidoExistente = _repoPartidos.ObterPeloDigito(cadastroPartido.Digito);
             if (partidoExistente != null)
                 throw new DigitoDePartidoEmUsoException();
             Partido novoPartido = new Partido()
@@ -25,7 +25,7 @@ namespace Application.Usecases
                 Nome = cadastroPartido.Nome,
                 Digito = cadastroPartido.Digito
             };
-            return repoPartidos.Criar(novoPartido);
+            return _repoPartidos.Criar(novoPartido);
         }
     }
 }

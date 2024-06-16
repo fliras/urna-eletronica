@@ -4,17 +4,17 @@ namespace Core.Entities
 {
     public class CargoConcorrido
     {
-        private ChapaEleitoral[] chapasEleitorais;
+        private ChapaEleitoral[] _chapasEleitorais;
 
         public int IdCargo { get; set; }
         public ChapaEleitoral[] ChapasEleitorais
         {
-            get => chapasEleitorais;
+            get => _chapasEleitorais;
             set
             {
                 if (value.Length < 2)
                     throw new ChapasInsuficientesException();
-                chapasEleitorais = value;
+                _chapasEleitorais = value;
             }
         }
     }
