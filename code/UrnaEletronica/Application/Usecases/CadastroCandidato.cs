@@ -16,7 +16,8 @@ namespace Application.Usecases
 
         public int Handle(CadastroCandidatoDto cadastroCandidato)
         {
-            Candidato novoCandidato = new Candidato() {
+            Candidato novoCandidato = new Candidato()
+            {
                 Nome = cadastroCandidato.Nome, 
                 UriFoto = cadastroCandidato.UriFoto 
             };
