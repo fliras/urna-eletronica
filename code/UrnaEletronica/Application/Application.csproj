@@ -43,13 +43,16 @@
   <ItemGroup>
     <Compile Include="DTOs\CadastroCandidatoDTO.cs" />
     <Compile Include="DTOs\CadastroCargoDTO.cs" />
+    <Compile Include="DTOs\CadastroEleicaoDTO.cs" />
     <Compile Include="DTOs\CadastroPartidoDTO.cs" />
     <Compile Include="Interfaces\ICadastroCandidato.cs" />
     <Compile Include="Interfaces\ICadastroCargo.cs" />
+    <Compile Include="Interfaces\ICadastroEleicao.cs" />
     <Compile Include="Interfaces\ICadastroPartido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usecases\CadastroCandidato.cs" />
     <Compile Include="Usecases\CadastroCargo.cs" />
+    <Compile Include="Usecases\CadastroEleicao.cs" />
     <Compile Include="Usecases\CadastroPartido.cs" />
   </ItemGroup>
   <ItemGroup />

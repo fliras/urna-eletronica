@@ -43,11 +43,17 @@
   <ItemGroup>
     <Compile Include="Entities\Candidato.cs" />
     <Compile Include="Entities\Cargo.cs" />
+    <Compile Include="Entities\CargoConcorrido.cs" />
+    <Compile Include="Entities\ChapaEleitoral.cs" />
+    <Compile Include="Entities\Eleicao.cs" />
     <Compile Include="Entities\Partido.cs" />
+    <Compile Include="Exceptions\CandidatosInsuficientesException.cs" />
+    <Compile Include="Exceptions\ChapasInsuficientesException.cs" />
     <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
     <Compile Include="Interfaces\IRepositorioCargos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
+    <Compile Include="Interfaces\IRepositorioEleicao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
