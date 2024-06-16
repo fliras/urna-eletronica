@@ -49,12 +49,15 @@
     <Compile Include="Entities\Partido.cs" />
     <Compile Include="Entities\Voto.cs" />
     <Compile Include="Exceptions\CandidatosInsuficientesException.cs" />
+    <Compile Include="Exceptions\CargoNaoVotadoException.cs" />
     <Compile Include="Exceptions\ChapasInsuficientesException.cs" />
     <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
     <Compile Include="Exceptions\EleicaoEmAndamentoException.cs" />
+    <Compile Include="Exceptions\EleicaoJaFinalizadaException.cs" />
     <Compile Include="Exceptions\EleicaoJaIniciadaException.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
     <Compile Include="Interfaces\IRepositorioCargos.cs" />
+    <Compile Include="Interfaces\IRepositorioCargosConcorridos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
     <Compile Include="Interfaces\IRepositorioEleicao.cs" />
     <Compile Include="Interfaces\IRepositorioVotos.cs" />

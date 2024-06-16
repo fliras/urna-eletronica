@@ -49,6 +49,7 @@
     <Compile Include="Interfaces\ICadastroCargo.cs" />
     <Compile Include="Interfaces\ICadastroEleicao.cs" />
     <Compile Include="Interfaces\ICadastroPartido.cs" />
+    <Compile Include="Interfaces\IFimEleicao.cs" />
     <Compile Include="Interfaces\IInicioEleicao.cs" />
     <Compile Include="Interfaces\IRegistroVotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Usecases\CadastroCargo.cs" />
     <Compile Include="Usecases\CadastroEleicao.cs" />
     <Compile Include="Usecases\CadastroPartido.cs" />
+    <Compile Include="Usecases\FimEleicao.cs" />
     <Compile Include="Usecases\InicioEleicao.cs" />
     <Compile Include="Usecases\RegistroVotos.cs" />
   </ItemGroup>
