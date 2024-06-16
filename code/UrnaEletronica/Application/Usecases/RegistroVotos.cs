@@ -21,7 +21,7 @@ namespace Application.Usecases
                 Voto novoVoto = new Voto()
                 {
                     IdChapa = v.IdChapaEleitoral,
-                    IdEleicao = v.IdEleicao
+                    IdCargoConcorrido = v.IdCargoConcorrido
                 };
                 _repoVotos.Criar(novoVoto);
             }

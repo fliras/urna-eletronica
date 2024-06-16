@@ -2,7 +2,7 @@
 {
     public class VotoDto
     {
-        public int IdEleicao { get; set; }
+        public int IdCargoConcorrido { get; set; }
         public int IdChapaEleitoral { get; set; }
     }
 }
