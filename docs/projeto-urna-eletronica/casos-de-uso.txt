@@ -1,0 +1,60 @@
+projeto urna eletrônica:
+
+Objetivo:
+Simular o funcionamento de uma urna eletrônica, possibilitando a realização de eleições de candidatos pré-cadastrados.
+
+O que é uma votação no contexto do software?
+Numa votação, são ofertadas X vagas que serão concorridas por Y chapas filiadas a algum partido político. Uma chapa
+pode ser formada por no mínimo um candidato. Um cargo só poderá ser ofertado em uma eleição caso tenha no mínimo duas chapas.
+Só é possível a condução de uma única votação por vez. Outras votações só devem ser iniciadas após a conclusão
+da eleição corrente. Só é permitido finalizar uma votação caso exista ao menos um voto válido em cada um dos
+seus cargos ofertadados. Para que uma votação possa ser iniciada, é necessário cadastrar previamente candidatos, partidos
+e cargos a serem concorridos. Uma vez cadastrados, estes elementos prévios poderão ser reaproveitados em outras eleições.
+
+Caso de uso #1 - Cadastro de candidatos:
+O usuário acessa o painel administrativo da urna. Uma vez autenticado, o usuário abrirá a tela de cadastro de
+candidatos e incluirá um novo, informando nome completo e foto de identificação do candidato.
+
+Caso de uso #2 - Cadastro de partidos:
+O usuário acessa o painel administrativo da urna. Abre a tela de cadastro de partidos. Inclui um novo partido
+informando nome e dígito identificador, que deverá ser único para cada partido.
+
+Caso de uso #3 - Cadastro de cargos:
+O usuário acessa o painel administrativo da urna. Abre a tela de cadastro de cargos. Inclui um novo cargo
+informando nome e descrição (opcional).
+
+Caso de uso #4 - Cadastro de votação:
+O usuário acessa o painel administrativo da urna. Abre a tela de cadastro de votações. Seleciona os cargos
+que serão ofertados. Inclui chapas eleitorais para cada cargo ofertado. As chapas são constituídas de um
+ou mais candidatos vinculados a um partido político. Cada cargo disponibilizado deverá ter obrigatoriamente
+duas ou mais chapas para viabilizar a eleição.
+
+Caso de uso #5 - Inicio de votação:
+O usuário acessa o painel administrativo da urna. Abre a tela de gestão de votações. Seleciona uma votação
+e a inicia. Só é possível iniciar uma votação caso não haja outras em andamento. Votações já finalizadas
+ou que estão em curso poderão ser reiniciadas. Neste caso, todos os dados anteriores serão apagados.
+
+Caso de uso #6 - Votação:
+O usuário acessa a tela de votação. De acordo com os cargos disponíveis na eleição, deverá escolher
+dentre as chapas que estão concorrendo. Caso queira se abster, o eleitor também poderá votar "branco"
+ou "nulo". Ao final da votação, os votos do eleitor são computados e a tela fica liberada para a
+próxima votação.
+
+Caso de uso #7 - Fim de votação:
+O usuário acessa o painel administrativo da urna. Abre a tela de gestão de votações. Seleciona a
+votação corrente e a finaliza. A votação só poderá ser finalizada caso haja ao menos um voto
+válido para cada um de seus cargos ofertados.
+
+Caso de uso #8 - Reinicio de votação:
+O usuário acessa o painel administrativo da urna. Abre a tela de gestão de votações. Seleciona a votação
+e reinicia. Apenas votações em andamento poderão ser reiniciadas. Ao se reiniciar a votação, todos os dados
+anteriores são apagados para o início definitivo.
+
+Caso de uso #9 - Boca de urna:
+O usuário acessa o painel administrativo da urna. Abre a tela de gestão de votações. Seleciona uma
+votação já finalizada e extrai a boca de urna, contendo todos os votos computados, em ordem
+aleatória. A extração poderá ser disponilizada em vários formatos, a saber: txt, json, csv, pdf...
+
+Caso de uso #10 - Parametrização da urna:
+O usuário acessa o painel administrativo da urna. Abre a tela de parametrização. Serão
+disponilizados uma série de configurações que poderão modificadas de acordo com a necessidade.

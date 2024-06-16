@@ -1,0 +1,176 @@
+O software será desenvolvido utilizando a linguagem C#. Ele será dividido em camadas, a saber: Domain, Infrastructure e UI.
+Desta forma, espera-se obter a separação entre regra de negócio, dependências externas e interface do usuário.
+
+estrutura de pastas:
+
+Solution
+  Core
+    Entities
+    Exceptions
+    Interfaces
+      Repositories
+  Application
+    Usecases
+    DTOs
+    Interfaces
+      Usecases
+  Infrastructure
+    Data
+      Repositories
+  UI
+
+====================================================================================
+
+Application:
+--> Casos de uso (Interfaces):
+* ICadastroCandidato
+  Entrada: CadastroCandidatoDTO: { Nome: string, UriFoto: string }
+  Saída..: int
+  Dependências: IRepositorioCandidato
+
+* ICadastroPartido
+  Entrada: CadastroPartidoDTO: { Nome: string, Digito: string }
+  Saída..: int
+  Dependências: IRepositorioPartido
+
+* ICadastroCargo
+  Entrada: CadastroCargoDTO: { Nome: string }
+  Saída..: int
+  Dependências: IRepositorioCargo
+
+* ICadastroVotacao
+  Entrada: CadastroVotacaoDTO
+  Saída..: int
+  Dependências: IRepositorioVotacao
+CadastroVotacaoDTO:
+{
+  NomeVotacao: string,
+  CargosConcorridos: [{
+    IdCargo: int,
+    ChapasEleitorais: [{
+      Digito: string,
+      IdPartido: int,
+      IdsDosCandidatos: int[]
+    }]
+  }]
+}
+
+* IInicioVotacao
+  Entrada: int
+  Saída..: void
+  Dependências: IRepositorioVotacao
+
+* IRegistroVotos
+  Entrada: VotoDTO: [{ IdVotacao: int, IdChapaEleitoral: int }]
+  Saída..: void
+  Dependências: IRepositorioVotos
+
+* IFimVotacao
+  Entrada: int
+  Saída..: void
+  Dependências: IRepositorioVotacao
+
+* IGeracaoBocaDeUrna
+  Entrada: int
+  Saída..: ?
+  Dependências: IRepositorioVotacao
+
+* IParametrizacaoUrna
+  Entrada: ParametroUrnaDTO
+  Saída..: void
+  Dependências: IRepositorioUrna
+ParametroUrnaDTO
+[{
+  IdParametro: int,
+  Nome: string,
+  Descricao: string?,
+  Tipo: string,
+  Chave: string,
+  Valor: string
+}]
+
+====================================================================================
+
+Core:
+--> Entidades:
+Candidato {
+  Id: int,
+  Nome: string,
+  UriFoto: string
+}
+
+Partido {
+  Id: int,
+  Nome: string
+  Digito: string
+}
+
+Cargo {
+  Id: int,
+  Nome: string
+}
+
+Eleicao {
+  Id: int,
+  Nome: string,
+  DataInicio: string?,
+  DataFim: string?
+}
+
+ChapaEleitoral {
+  Id: int,
+  Digito: string,
+  IdPartido: int,
+  IdsDosCandidatos: int[]
+}
+
+CargoConcorrido {
+  IdCargo: int,
+  ChapasEleitorais: ChapaEleitoral[]
+}
+
+Voto {
+  Id: int,
+  IdEleicao: int,
+  IdChapa: int?
+}
+
+ParametroUrna {
+  Id: int,
+  Nome: string,
+  Descricao: string?,
+  Tipo: string,
+  Chave: string,
+  Valor: string
+}
+
+--> Repositórios (Interfaces):
+* IRepositorioCandidato
+    int Criar(Candidato candidato)
+    Candidato[] ObterTodos()
+
+* IRepositorioPartido
+    int Criar(Partido partido)
+    Partido[] ObterTodos()
+
+* IRepositorioCargo
+    int Criar(Cargo cargo)
+    Cargo[] ObterTodos()
+
+* IRepositorioVotacao
+    int Criar(Eleicao eleicao)
+    void OfertarCargo(int idEleicao, CargoConcorrido cargo)
+    void Atualizar(Eleicao eleicao)
+    ? ExtrairBocaDeUrna(int idEleicao)
+
+* IRepositorioVotos
+  int Criar(Voto voto)
+
+* IRepositorioUrna
+  void AtualizarParametros(ParametroUrna[] parametros)
+
+
+
+
+
+
