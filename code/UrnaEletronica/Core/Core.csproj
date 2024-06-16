@@ -50,6 +50,8 @@
     <Compile Include="Exceptions\CandidatosInsuficientesException.cs" />
     <Compile Include="Exceptions\ChapasInsuficientesException.cs" />
     <Compile Include="Exceptions\DigitoDePartidoEmUsoException.cs" />
+    <Compile Include="Exceptions\EleicaoEmAndamentoException.cs" />
+    <Compile Include="Exceptions\EleicaoJaIniciadaException.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
     <Compile Include="Interfaces\IRepositorioCargos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
