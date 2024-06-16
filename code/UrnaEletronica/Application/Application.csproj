@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\CadastroCandidatoDTO.cs" />
-    <Compile Include="DTOs\CadastroCargoDTO.cs" />
     <Compile Include="DTOs\CadastroEleicaoDTO.cs" />
     <Compile Include="DTOs\CadastroPartidoDTO.cs" />
     <Compile Include="Interfaces\ICadastroCandidato.cs" />

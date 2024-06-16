@@ -1,9 +1,7 @@
-﻿using Application.DTOs;
-
-namespace Application.Interfaces
+﻿namespace Application.Interfaces
 {
     public interface ICadastroCargo
     {
-        int Handle(CadastroCargoDto cadastroCargo);
+        int Handle(string nomeDoCargo);
     }
 }

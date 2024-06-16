@@ -1,5 +1,4 @@
-﻿using Application.DTOs;
-using Application.Interfaces;
+﻿using Application.Interfaces;
 using Core.Entities;
 using Core.Interfaces;
 
@@ -14,9 +13,9 @@ namespace Application.Usecases
             repoCargos = repositorioCargos;
         }
 
-        public int Handle(CadastroCargoDto cadastroCargo)
+        public int Handle(string nomeDoCargo)
         {
-            Cargo novoCargo = new Cargo() { Nome = cadastroCargo.Nome };
+            Cargo novoCargo = new Cargo() { Nome = nomeDoCargo };
             return repoCargos.Criar(novoCargo);
         }
     }
