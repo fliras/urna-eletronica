@@ -46,6 +46,7 @@
     <Compile Include="Entities\CargoConcorrido.cs" />
     <Compile Include="Entities\ChapaEleitoral.cs" />
     <Compile Include="Entities\Eleicao.cs" />
+    <Compile Include="Entities\ParametroUrna.cs" />
     <Compile Include="Entities\Partido.cs" />
     <Compile Include="Entities\Voto.cs" />
     <Compile Include="Exceptions\CandidatosInsuficientesException.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Interfaces\IRepositorioCargosConcorridos.cs" />
     <Compile Include="Interfaces\IRepositorioPartidos.cs" />
     <Compile Include="Interfaces\IRepositorioEleicao.cs" />
+    <Compile Include="Interfaces\IRepositorioUrna.cs" />
     <Compile Include="Interfaces\IRepositorioVotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
