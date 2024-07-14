@@ -53,7 +53,8 @@ anteriores são apagados para o início definitivo.
 Caso de uso #9 - Boca de urna:
 O usuário acessa o painel administrativo da urna. Abre a tela de gestão de votações. Seleciona uma
 votação já finalizada e extrai a boca de urna, contendo todos os votos computados, em ordem
-aleatória. A extração poderá ser disponilizada em vários formatos, a saber: txt, json, csv, pdf...
+aleatória. O usuário deve poder escolher onde o arquivo da boca de urna será gerado. A extração poderá
+ser disponilizada em vários formatos, a saber: txt, json, csv, pdf...
 
 Caso de uso #10 - Parametrização da urna:
 O usuário acessa o painel administrativo da urna. Abre a tela de parametrização. Serão
