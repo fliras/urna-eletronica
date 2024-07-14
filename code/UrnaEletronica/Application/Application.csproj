@@ -51,7 +51,7 @@
     <Compile Include="Interfaces\ICadastroPartido.cs" />
     <Compile Include="Interfaces\IFimEleicao.cs" />
     <Compile Include="Interfaces\IInicioEleicao.cs" />
-    <Compile Include="Interfaces\IParametrizacaoaUrna.cs" />
+    <Compile Include="Interfaces\IParametrizacaoUrna.cs" />
     <Compile Include="Interfaces\IRegistroVotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usecases\CadastroCandidato.cs" />

@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface IParametrizacaoaUrna
+    public interface IParametrizacaoUrna
     {
         void Handle(ParametroUrna[] parametros);
     }

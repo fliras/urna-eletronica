@@ -4,7 +4,7 @@ using Core.Interfaces;
 
 namespace Application.Usecases
 {
-    internal class ParametrizacaoUrna : IParametrizacaoaUrna
+    internal class ParametrizacaoUrna : IParametrizacaoUrna
     {
         private readonly IRepositorioUrna _repoUrna;
 
