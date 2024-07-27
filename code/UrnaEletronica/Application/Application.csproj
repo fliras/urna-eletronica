@@ -45,6 +45,7 @@
     <Compile Include="DTOs\CadastroEleicaoDTO.cs" />
     <Compile Include="DTOs\CadastroPartidoDTO.cs" />
     <Compile Include="DTOs\VotoDTO.cs" />
+    <Compile Include="Interfaces\IAudioPlayerUrna.cs" />
     <Compile Include="Interfaces\ICadastroCandidato.cs" />
     <Compile Include="Interfaces\ICadastroCargo.cs" />
     <Compile Include="Interfaces\ICadastroEleicao.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Interfaces\IParametrizacaoUrna.cs" />
     <Compile Include="Interfaces\IRegistroVotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usecases\AudioPlayerUrna.cs" />
     <Compile Include="Usecases\CadastroCandidato.cs" />
     <Compile Include="Usecases\CadastroCargo.cs" />
     <Compile Include="Usecases\CadastroEleicao.cs" />

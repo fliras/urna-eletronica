@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\AudiosDaUrna.cs" />
     <Compile Include="Entities\Candidato.cs" />
     <Compile Include="Entities\Cargo.cs" />
     <Compile Include="Entities\CargoConcorrido.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Exceptions\EleicaoEmAndamentoException.cs" />
     <Compile Include="Exceptions\EleicaoJaFinalizadaException.cs" />
     <Compile Include="Exceptions\EleicaoJaIniciadaException.cs" />
+    <Compile Include="Interfaces\IPlayerAudio.cs" />
     <Compile Include="Interfaces\IRepositorioCandidatos.cs" />
     <Compile Include="Interfaces\IRepositorioCargos.cs" />
     <Compile Include="Interfaces\IRepositorioCargosConcorridos.cs" />
